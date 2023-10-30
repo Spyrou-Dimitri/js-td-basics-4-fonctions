@@ -16,8 +16,32 @@ N.B. Faites deux versions :
 
 
 // Utilisation de la fonction calcMin pour calculer le minimum
+function calcMin(param1, param2) {
+    if (param1 < param2) {
+        return param1;
+    } else if (param1 > param2) {
+        return param2;
+    } else {
+        console.log("Ce sont les mêmes nombres !");
+    }
+}
 
+console.log(calcMin(4.5, 5));
+console.log(calcMin(19, 9));
+console.log(calcMin(1, 1));
 
+const calcMinArrow = (param1, param2) => {
+    if (param1 < param2) {
+        return param1;
+    } else if (param1 > param2) {
+        return param2;
+    } else {
+        console.log("Ce sont les mêmes nombres !");
+    }
+}
+console.log(calcMinArrow(4.5, 5));
+console.log(calcMinArrow(19, 9));
+console.log(calcMinArrow(1, 1));
 // Version avec une arrow function
 
 // Utilisation de la fonction calcMinArrow pour calculer le minimum
@@ -28,3 +52,6 @@ const calcMinConcise = (a, b) => (a < b) ? a : b;
 
 // Utilisation de la fonction calcMinConcise pour calculer le minimum
 
+console.log(calcMinConcise(4.5, 9));
+console.log(calcMinConcise(19, 9));
+console.log(calcMinConcise(1, 1));

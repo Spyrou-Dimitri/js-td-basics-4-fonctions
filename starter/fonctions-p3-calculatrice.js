@@ -16,4 +16,29 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 
 
 // Utilisation de la fonction calculer
+function calculer(param1, param2) {
+    const operation = prompt('Quelle opération souhaitez vous réaliser ?');
+    switch (operation) {
+        case "Addition":
+            resultat = param1 + param2;
+            return resultat;
+        case "Soustraction":
+            resultat = param1 - param2;
+            return resultat;
+        case "Division":
+            resultat = param1 / param2;
+            return resultat;
+        case "Multiplication":
+            resultat = param1 * param2;
+            return resultat;
+        default:
+            console.log("Je n'ai pas compris");
+            break;
+    }
+}
+
+console.log(calculer(4, 6));
+console.log(calculer(4, 6));
+console.log(calculer(2, 0));
+console.log(calculer(12, 0));
 
